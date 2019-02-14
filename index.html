@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+     <!-- Bootstrap CSS -->
+    
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Axios Demo <small>by jll</small></h1>
+
+      <div class="jumbotron">
+        <h1>Welcome to axios</h1>
+        <h5>This application uses Axios, Axios is a Promise-based HTTP client for Javsscript</h5>
+      </div>
+
+
+      <div class="card card-primary mb-3">
+        <div class="card-header bg-primary text-white">Get Request With Parameters</div>
+        <div class="card-body">
+          <button class="btn btn-primary" onclick="performGetRequest1()">Get todos</button>
+          <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          <div class="card-body" id="getResult1">
+            
+          </div>
+
+        </div>
+      </div>
+
+ <div class="card card-primary mb-3">
+        <div class="card-header bg-primary text-white">Get Request With Parameters</div>
+        <div class="card-body">
+          <input type="text" class="form-control" id="todoId" placeholder="todo id" name="">
+          <button class="btn btn-primary mt-3" onclick="performGetRequest2()">Send</button>
+           <button class="btn btn-warning mt-3" onclick="clearOutput()">Clear</button>
+          <div class="card-body" id="getResult2">
+            
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card card-primary mb-3">
+        <div class="card-header bg-primary text-white">Get Request</div>
+        <div class="card-body">
+        <form class="form-group" id="todoInputForm">
+            <div class="form-group">
+              <input type="text" class="form-control" id="todoTitle" placeholder="Todo Title ...">
+            </div> 
+            <button type="submit" class="btn btn-primary">Send</button>
+           <button class="btn btn-warning" onclick="clearOutput()">Clear</button>
+          </form><br>
+           
+          <div class="card-body" id="postResult"></div>
+        </div>
+      </div>
+
+    
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
